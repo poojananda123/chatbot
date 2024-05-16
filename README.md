@@ -3,11 +3,11 @@ The application chatbot is used to deliver reliable, contextual, and quick answe
 
 🔧 Installing
 
-1. Clone the repository on your local machine.
+1. Clone the repository on your local machine -> 
 cd chatbot
 
-2. Build the project.
+2. Build the project -> 
 mvn clean install
 
-3. Run your Spring Boot application.
+3. Run your Spring Boot application ->  
 mvn spring-boot:run
