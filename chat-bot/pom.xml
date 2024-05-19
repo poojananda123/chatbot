@@ -57,12 +57,7 @@
       	<artifactId>langchain4j-easy-rag</artifactId>
     	<version>0.30.0</version>
     </dependency>
-    
-<dependency>
-    <groupId>dev.langchain4j</groupId>
-    <artifactId>langchain4j-open-ai-spring-boot-starter</artifactId>
-    <version>0.30.0</version>
-</dependency>
+
 
 
 <dependency>
@@ -89,6 +84,37 @@
     <groupId>org.deeplearning4j</groupId>
     <artifactId>deeplearning4j-core</artifactId>
     <version>1.0.0-M2.1</version>
+</dependency>
+ <dependency>
+    <groupId>org.deeplearning4j</groupId>
+    <artifactId>deeplearning4j-nlp</artifactId>
+ </dependency>
+<!-- https://mvnrepository.com/artifact/org.deeplearning4j/deeplearning4j-nlp -->
+<dependency>
+    <groupId>org.deeplearning4j</groupId>
+    <artifactId>deeplearning4j-nlp</artifactId>
+    <version>1.0.0-M2.1</version>
+</dependency>
+
+<!-- Deeplearning4j for Word2Vec -->
+<dependency>
+    <groupId>org.deeplearning4j</groupId>
+    <artifactId>deeplearning4j-nlp</artifactId>
+    <version>1.0.0-beta7</version>
+</dependency>
+
+<!-- Apache OpenNLP -->
+<dependency>
+    <groupId>org.apache.opennlp</groupId>
+    <artifactId>opennlp-tools</artifactId>
+    <version>1.9.3</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.json/json -->
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20240303</version>
 </dependency>
 
 
