@@ -18,6 +18,9 @@ public class FilesStorageService {
 	@Autowired
 	private BotRepo botRepo;
 	
+	@Autowired
+	private BotService botService;
+	
 //	private final ParagraphVectors paragraphVectors;
 	
 	  private final Path root = Paths.get("./uploads");
@@ -35,6 +38,8 @@ public class FilesStorageService {
 	    try {
 //	    	init();
 	      Files.copy(file.getInputStream(), this.root.resolve(file.getOriginalFilename()));
+	      botService.saveDocument(file.getOriginalFilename());
+	      
 	    } catch (Exception e) {
 	      if (e instanceof FileAlreadyExistsException) {
 	        throw new RuntimeException("A file of that name already exists.");
