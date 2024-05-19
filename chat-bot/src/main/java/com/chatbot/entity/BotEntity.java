@@ -1,44 +1,51 @@
 package com.chatbot.entity;
 
+import java.util.Map;
+
+import org.nd4j.linalg.api.ndarray.INDArray;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "documents")
+@Document(collection = "chatbot")
 public class BotEntity {
 
 	    @Id
 	    private String id;
-	    private String text;
-	    private double[] embedding;
+	    private String documentText;
+	    private String vector;
 		public String getId() {
 			return id;
 		}
 		public void setId(String id) {
 			this.id = id;
 		}
-		public String getText() {
-			return text;
+		public String getDocumentText() {
+			return documentText;
 		}
-		public void setText(String text) {
-			this.text = text;
+		public void setDocumentText(String documentText) {
+			this.documentText = documentText;
 		}
-		public double[] getEmbedding() {
-			return embedding;
+		public String getVector() {
+			return vector;
 		}
-		public void setEmbedding(double[] embedding) {
-			this.embedding = embedding;
+		public void setVector(String vector) {
+			this.vector = vector;
 		}
-		public BotEntity(String id, String text, double[] embedding) {
+		public BotEntity(String id, String documentText, String vector) {
 			super();
 			this.id = id;
-			this.text = text;
-			this.embedding = embedding;
+			this.documentText = documentText;
+			this.vector = vector;
 		}
 		public BotEntity() {
 			super();
 			// TODO Auto-generated constructor stub
 		}
-
-	    // Getters and setters
+		@Override
+		public String toString() {
+			return "BotEntity [id=" + id + ", documentText=" + documentText + ", vector=" + vector + "]";
+		}
+		
+	    
 	
 }
